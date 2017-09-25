@@ -6,7 +6,7 @@ app.use(express.static(__dirname + '/public'))
 
 app.get('/', function(request, response) {
  
-  response.json({ "speech": "response", "displayText": "response1" });
+  response.json({ "speech": "response"});
 })
 
 app.listen(app.get('port'), function() {
