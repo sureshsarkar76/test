@@ -13,7 +13,7 @@ app.get('/', function(request, response) {
 
 app.post('/', function(request, response) {
  
- console.log(request.body);
+ 
  response.json({"speech": "new","displayText": "last","data": {},"contextOut": [],"source": "DuckDuckGo"});
  
 })
