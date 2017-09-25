@@ -11,7 +11,12 @@ app.get('/', function(request, response) {
  
 })
 
-
+app.post('/', function(request, response) {
+ 
+  
+ response.json({"speech": "new","displayText": "last","data": {},"contextOut": [],"source": "DuckDuckGo"});
+ 
+})
 
 
 app.listen(app.get('port'), function() {
