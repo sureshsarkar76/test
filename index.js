@@ -4,8 +4,11 @@ var app = express()
 app.set('port', (process.env.PORT || 5000))
 app.use(express.static(__dirname + '/public'))
 
-app.get('/', function(request, response) {  
-  response.json({ message: 'hooray! welcome to our api!' });
+app.get('/', function(request, response) {
+  response = "This is a sample response from your webhook!" //Default response from the webhook to show it's working
+
+ 
+  response.json({ "speech": response, "displayText": response });
 })
 
 app.listen(app.get('port'), function() {
