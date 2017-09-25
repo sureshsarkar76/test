@@ -6,8 +6,8 @@ app.use(express.static(__dirname + '/public'))
 
 app.get('/', function(request, response) {
  
-  response.json({ "speech": "response"});
-})
+  
+ response.json({"speech": "new","displayText": "last","data": {},"contextOut": [],"source": "DuckDuckGo"});
 
 app.listen(app.get('port'), function() {
   console.log("Node app is running at localhost:" + app.get('port'))
